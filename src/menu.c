@@ -61,7 +61,7 @@ static const char *funny_messages[][2] = {
 	{"CUTE FOXXO", "FOREVER"},
 	{"ONE OF THE BEST THINGS", "ALEX"},
 	{"A FURRY WITHOUT A DIAPER", "IS AN ANGEL WITHOUT WINGS"},
-	{"BALLS SEX", "BALLS SEX"},
+	{"L IS REAL", "TWO FOUR ZERO ONE"},
 };
 
 #ifdef PSXF_NETWORK
@@ -535,7 +535,6 @@ void Menu_Tick(void)
 			static const char *menu_options[] = {
 				"STORY MODE",
 				"FREEPLAY",
-				"BONUS",
 				"OPTIONS",
 				#ifdef PSXF_NETWORK
 					"JOIN SERVER",
@@ -593,11 +592,11 @@ void Menu_Tick(void)
 						case 1: //Freeplay
 							menu.next_page = MenuPage_Freeplay;
 							break;
-						case 2: //Bonus
-							menu.next_page = MenuPage_Mods;
-							break;
-						case 3: //Options
+						case 2: //Options
 							menu.next_page = MenuPage_Options;
+							break;
+						case 3: //Secret Songs
+							menu.next_page = MenuPage_Mods;
 							break;
 					#ifdef PSXF_NETWORK
 						case 4: //Join Server
@@ -673,7 +672,7 @@ void Menu_Tick(void)
 				const char *week;
 				StageId stage;
 				const char *name;
-				const char *tracks[3];
+				const char *tracks[4];
 			} menu_options[] = {
 				{NULL, StageId_1_4, "TUTORIAL", {"TUTORIAL", NULL, NULL}},
 				{"1", StageId_1_1, "NGS BASICS IN REAL RAP", {"FLAMINGO", "BIG CHUNGUS", "MEGALOVANIA"}},
@@ -683,6 +682,8 @@ void Menu_Tick(void)
 				{"5", StageId_5_1, "BAND PRACTICE", {"DIE ANYWHERE ELSE", "WEIRD AUTUMN", "PUMPKIN HEAD GUY"}},
 				{"6", StageId_6_1, "DARK WORLD", {"LULLABY", "THE LEGEND", "CASTLE TOWN"}},
 				{"7", StageId_7_1, "PURO", {"WAKING UP", "INFECTED", "RELIVING THE PAST"}},
+				{"8", StageId_Kapi_1, "BACK TO THE DARK WORLD", {"A CYBERS WORLD", "BIG SHOT", "NEO", "THE WORLD REVOLVING"}},	
+				{"9", StageId_Clwn_1, "RADAR RETURS", {"IMPERSANATOR", "JUST SUNG SOME MORE", "STICKS AND STONES"}},			
 			};
 			
 			//Initialize page
@@ -828,6 +829,15 @@ void Menu_Tick(void)
 				{StageId_7_1, 0xFFF6B604, "WAKING UP"},
 				{StageId_7_2, 0xFFF6B604, "INFECTED"},
 				{StageId_7_3, 0xFFF6B604, "RELIVING THE PAST"},
+				{StageId_Kapi_1, 0xFFFF78BF, "A CYBERS WORLD"},
+				{StageId_Kapi_2, 0xFFFF78BF, "BIG SHOT"},
+				{StageId_Kapi_3, 0xFFFF78BF, "NEO"},
+				{StageId_Kapi_4, 0xFFFF78BF, "THE WORLD REVOLVING"},
+				{StageId_Clwn_1, 0xFFFF78BF, "IMPERSANATOR"},
+				{StageId_Clwn_2, 0xFFFF78BF, "JUST SUNG SOME MORE"},
+				{StageId_Clwn_3, 0xFFFF78BF, "STICKS AND STONES"},
+
+
 			};
 			
 			//Initialize page
@@ -938,6 +948,7 @@ void Menu_Tick(void)
 				boolean difficulty;
 			} menu_options[] = {
 				{StageId_2_4,    "RULER OF EVERYTHING", false},
+				{StageId_Clwn_4,    "GUMMYBEAR", false},
 			};
 			
 			//Initialize page
@@ -949,7 +960,7 @@ void Menu_Tick(void)
 			
 			//Draw page label
 			menu.font_bold.draw(&menu.font_bold,
-				"BONUS",
+				"SECRET SONGS",
 				16,
 				SCREEN_HEIGHT - 32,
 				FontAlign_Left

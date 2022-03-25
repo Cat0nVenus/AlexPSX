@@ -75,7 +75,7 @@ void Week4_Henchmen_SetFrame(void *user, u8 frame)
 
 void Week4_Henchmen_Draw(Back_Week4 *this, fixed_t x, fixed_t y)
 {
-	//Draw character
+	
 	const CharFrame *cframe = &henchmen_frame[this->hench_frame];
 	
 	fixed_t ox = x - ((fixed_t)cframe->off[0] << FIXED_SHIFT);
@@ -89,7 +89,7 @@ void Week4_Henchmen_Draw(Back_Week4 *this, fixed_t x, fixed_t y)
 //Week 4 background functions
 #define CAR_START_X FIXED_DEC(-500,1)
 #define CAR_END_X    FIXED_DEC(500,1)
-#define CAR_TIME_A FIXED_DEC(5,1)
+#define CAR_TIME_A FIXED_DEC(14,1)
 #define CAR_TIME_B FIXED_DEC(14,1)
 
 void Back_Week4_DrawFG(StageBack *back)
@@ -144,7 +144,7 @@ void Back_Week4_DrawMD(StageBack *back)
 	
 	Stage_DrawTex(&this->tex_back0, &fglimo_src, &fglimo_dst, stage.camera.bzoom);
 	fglimo_dst.x += fglimo_dst.w;
-	fglimo_dst.y -= (fglimo_dst.h * 22) >> 7;
+	fglimo_dst.y -= 128;
 	fglimo_src.y += 128;
 	Stage_DrawTex(&this->tex_back0, &fglimo_src, &fglimo_dst, stage.camera.bzoom);
 }

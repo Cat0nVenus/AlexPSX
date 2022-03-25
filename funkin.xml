@@ -187,12 +187,20 @@
 			<!-- Kapi assets -->
 			<dir name = "kapi">
 				<!-- Wocky charts -->
+				<file name = "kapi.1e.cht" type = "data" source = "iso/chart/wocky-easy.json.cht"/>
+				<file name = "kapi.1n.cht" type = "data" source = "iso/chart/wocky.json.cht"/>
 				<file name = "kapi.1h.cht" type = "data" source = "iso/chart/wocky-hard.json.cht"/>
 				<!-- Beathoven charts -->
+				<file name = "kapi.2e.cht" type = "data" source = "iso/chart/beathoven-easy.json.cht"/>
+				<file name = "kapi.2n.cht" type = "data" source = "iso/chart/beathoven.json.cht"/>
 				<file name = "kapi.2h.cht" type = "data" source = "iso/chart/beathoven-hard.json.cht"/>
 				<!-- Hairball charts -->
+				<file name = "kapi.3e.cht" type = "data" source = "iso/chart/hairball-easy.json.cht"/>
+				<file name = "kapi.3n.cht" type = "data" source = "iso/chart/hairball.json.cht"/>
 				<file name = "kapi.3h.cht" type = "data" source = "iso/chart/hairball-hard.json.cht"/>
 				<!-- Nyaw charts -->
+				<file name = "kapi.4e.cht" type = "data" source = "iso/chart/nyaw-easy.json.cht"/>
+				<file name = "kapi.4n.cht" type = "data" source = "iso/chart/nyaw.json.cht"/>
 				<file name = "kapi.4h.cht" type = "data" source = "iso/chart/nyaw-hard.json.cht"/>
 			</dir>
 			
@@ -224,6 +232,9 @@
 				<!-- Dad assets -->
 				<file name = "dad.arc" type = "data" source = "iso/dad/main.arc"/>
 				
+				<!-- Chara assets -->
+				<file name = "chara.arc" type = "data" source = "iso/chara/main.arc"/>
+				
 				<!-- Spook assets -->
 				<file name = "spook.arc" type = "data" source = "iso/spook/main.arc"/>
 				
@@ -242,6 +253,9 @@
 				<file name = "senpai.arc" type = "data" source = "iso/senpai/main.arc"/>
 				<file name = "senpaim.arc" type = "data" source = "iso/senpaim/main.arc"/>
 				<file name = "spirit.arc" type = "data" source = "iso/spirit/main.arc"/>
+				
+				<!-- Jevil assets -->
+				<file name = "jevil.arc" type = "data" source = "iso/jevil/main.arc"/>
 				
 				<!-- Tankman Captain assets -->
 				<file name = "tank.arc" type = "data" source = "iso/tank/main.arc"/>

@@ -49,17 +49,17 @@ static const XA_TrackDef xa_tracks[] = {
 	//WEEK7B.XA
 	{XA_Week7B, XA_LENGTH(12655)}, //XA_Stress
 	//KAPIA.XA
-	{XA_KapiA, XA_LENGTH(12138)}, //XA_Wocky
-	{XA_KapiA, XA_LENGTH(12000)}, //XA_Beathoven
+	{XA_KapiA, XA_LENGTH(15127)}, //XA_Wocky
+	{XA_KapiA, XA_LENGTH(8202)}, //XA_Beathoven
 	//KAPIB.XA
-	{XA_KapiB, XA_LENGTH(17159)}, //XA_Hairball
-	{XA_KapiB, XA_LENGTH(15157)}, //XA_Nyaw
+	{XA_KapiB, XA_LENGTH(17572)}, //XA_Hairball
+	{XA_KapiB, XA_LENGTH(11506)}, //XA_Nyaw
 	//CLWNA.XA
-	{XA_ClwnA, XA_LENGTH(10740)}, //XA_ImprobableOutset
-	{XA_ClwnA, XA_LENGTH(15169)}, //XA_Madness
+	{XA_ClwnA, XA_LENGTH(11936)}, //XA_ImprobableOutset
+	{XA_ClwnA, XA_LENGTH(17763)}, //XA_Madness
 	//CLWNB.XA
-	{XA_ClwnB, XA_LENGTH(21886)}, //XA_Hellclown
-	{XA_ClwnB, XA_LENGTH(19550)}, //XA_Expurgation
+	{XA_ClwnB, XA_LENGTH(24966)}, //XA_Hellclown
+	{XA_ClwnB, XA_LENGTH(8555)}, //XA_Expurgation
 };
 
 static const char *xa_paths[] = {

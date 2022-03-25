@@ -66,6 +66,8 @@ static const u8 note_anims[4][3] = {
 #include "character/gf.h"
 #include "character/gfweeb.h"
 #include "character/clucky.h"
+#include "character/jevil.h"
+#include "character/chara.h"
 
 #include "stage/dummy.h"
 #include "stage/week1.h"
@@ -138,7 +140,12 @@ static void Stage_ScrollCamera(void)
 		stage.camera.y += FIXED_MUL(dy, stage.camera.td);
 		stage.camera.zoom += FIXED_MUL(dz, stage.camera.td);
 		
-	
+		//Shake in Week 4
+		if (stage.stage_id >= StageId_4_1 && stage.stage_id <= StageId_4_3)
+		{
+			stage.camera.x += RandomRange(FIXED_DEC(-1,10),FIXED_DEC(1,10));
+			stage.camera.y += RandomRange(FIXED_DEC(-25,100),FIXED_DEC(25,100));
+		}
 	#endif
 	
 	//Update other camera stuff
@@ -593,6 +600,8 @@ void Stage_DrawTexCol(Gfx_Tex *tex, const RECT *src, const RECT_FIXED *dst, fixe
 	if (stage.stage_id >= StageId_6_1 && stage.stage_id <= StageId_6_3)
 	{
 		//Handle HUD drawing
+		
+		
 		if (tex == &stage.tex_hud0)
 		{
 			#ifdef STAGE_NOHUD
@@ -1234,6 +1243,7 @@ void Stage_Load(StageId id, StageDiff difficulty, boolean story)
 	//Load HUD textures
 	if (id >= StageId_6_1 && id <= StageId_6_3)
 		Gfx_LoadTex(&stage.tex_hud0, IO_Read("\\STAGE\\HUD0WEEB.TIM;1"), GFX_LOADTEX_FREE);
+	
 	else
 		Gfx_LoadTex(&stage.tex_hud0, IO_Read("\\STAGE\\HUD0.TIM;1"), GFX_LOADTEX_FREE);
 	Gfx_LoadTex(&stage.tex_hud1, IO_Read("\\STAGE\\HUD1.TIM;1"), GFX_LOADTEX_FREE);
@@ -1431,7 +1441,7 @@ void Stage_Tick(void)
 				else
 				#endif
 				{
-					if (stage.stage_id <= StageId_LastVanilla)
+					if (stage.stage_id <= StageId_Clwn_2)
 					{
 						if (stage.story)
 							Menu_Load(MenuPage_Story);

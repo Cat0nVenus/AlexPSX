@@ -43,22 +43,22 @@ typedef struct
 
 //Mom character definitions
 static const CharFrame char_mom_frame[] = {
-	{Mom_ArcMain_Idle0, {  0,   0, 128, 256}, { 42, 163}}, //0 idle 1
-	{Mom_ArcMain_Idle0, {128,   0, 128, 256}, { 41, 164}}, //1 idle 2
-	{Mom_ArcMain_Idle1, {  0,   0, 128, 256}, { 41, 165}}, //2 idle 3
-	{Mom_ArcMain_Idle1, {128,   0, 128, 256}, { 41, 165}}, //3 idle 4
+	{Mom_ArcMain_Idle0, {  0,   0, 44, 75}, { 42, 163}}, //0 idle 1
+	{Mom_ArcMain_Idle0, {107,   0, 44, 76}, { 41, 164}}, //1 idle 2
+	{Mom_ArcMain_Idle1, {  0,   0, 44, 76}, { 41, 165}}, //2 idle 3
+	{Mom_ArcMain_Idle1, {108,   0, 44, 76}, { 41, 165}}, //3 idle 4
 	
-	{Mom_ArcMain_Left, {  0,   0, 128, 256}, { 65, 151}}, //4 left 1
-	{Mom_ArcMain_Left, {128,   0, 128, 256}, { 63, 152}}, //5 left 1
+	{Mom_ArcMain_Left, {  0,   0, 51, 78}, { 65, 151}}, //4 left 1
+	{Mom_ArcMain_Left, {94,   0, 51, 78}, { 63, 152}}, //5 left 1
 	
-	{Mom_ArcMain_Down, {  0,   0, 128, 128}, { 41, 111}}, //6 down 1
-	{Mom_ArcMain_Down, {128,   0, 128, 128}, { 42, 114}}, //7 down 2
+	{Mom_ArcMain_Down, {  0,   0, 38, 74}, { 41, 111}}, //6 down 1
+	{Mom_ArcMain_Down, {119,   0, 38, 75}, { 42, 114}}, //7 down 2
 	
-	{Mom_ArcMain_Up, {  0,   0, 128, 256}, { 34, 196}}, //8 up 1
-	{Mom_ArcMain_Up, {128,   0, 128, 256}, { 35, 193}}, //9 up 2
+	{Mom_ArcMain_Up, {  0,   0, 48, 82}, { 34, 196}}, //8 up 1
+	{Mom_ArcMain_Up, {103,   0, 49, 81}, { 35, 193}}, //9 up 2
 	
-	{Mom_ArcMain_Right, {  0,   0, 128, 256}, { 62, 150}}, //10 right 1
-	{Mom_ArcMain_Right, {128,   0, 128, 256}, { 61, 151}}, //11 right 2
+	{Mom_ArcMain_Right, {  0,   0, 55, 80}, { 62, 150}}, //10 right 1
+	{Mom_ArcMain_Right, {118,   0, 55, 80}, { 61, 151}}, //11 right 2
 };
 
 static const Animation char_mom_anim[CharAnim_Max] = {

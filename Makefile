@@ -31,12 +31,14 @@ SRCS = src/main.c \
        src/character/bfweeb.c \
        src/character/speaker.c \
        src/character/dad.c \
+       src/character/chara.c \
        src/character/spook.c \
        src/character/pico.c \
        src/character/mom.c \
        src/character/xmasbf.c \
        src/character/xmasp.c \
        src/character/senpai.c \
+       src/character/jevil.c \
        src/character/senpaim.c \
        src/character/spirit.c \
        src/character/tank.c \

@@ -165,10 +165,10 @@
 		//Characters
 		{Char_BF_New,     FIXED_DEC(60,1),  FIXED_DEC(100,1)},
 		{Char_Clucky_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,    FIXED_DEC(0,1),  FIXED_DEC(-10,1)},
+		{Char_GF_New,    FIXED_DEC(-6,1),  FIXED_DEC(-20,1)},
 		
 		//Stage background
-		Back_Week1_New,
+		Back_Week4_New,
 		
 		//Song info
 		{FIXED_DEC(13,10),FIXED_DEC(16,10),FIXED_DEC(18,10)},
@@ -181,10 +181,10 @@
 		//Characters
 		{Char_BF_New,     FIXED_DEC(60,1),  FIXED_DEC(100,1)},
 		{Char_Clucky_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,    FIXED_DEC(0,1),  FIXED_DEC(-10,1)},
+		{Char_GF_New,    FIXED_DEC(0,1),  FIXED_DEC(-20,1)},
 		
 		//Stage background
-		Back_Week1_New,
+		Back_Week4_New,
 		
 		//Song info
 		{FIXED_DEC(13,10),FIXED_DEC(18,10),FIXED_DEC(2,1)},
@@ -196,11 +196,11 @@
 	{ //StageId_4_3 (MILF)
 		//Characters
 		{Char_BF_New,     FIXED_DEC(60,1),  FIXED_DEC(100,1)},
-		{Char_SenpaiM_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,    FIXED_DEC(0,1),  FIXED_DEC(-10,1)},
+		{Char_Chara_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
+		{Char_GF_New,    FIXED_DEC(0,1),  FIXED_DEC(-20,1)},
 		
 		//Stage background
-		Back_Week1_New,
+		Back_Week4_New,
 		
 		//Song info
 		{FIXED_DEC(14,10),FIXED_DEC(17,10),FIXED_DEC(26,10)},
@@ -310,7 +310,7 @@
 	{ //StageId_6_3 (Thorns)
 		//Characters
 		{Char_BFWeeb_New,  FIXED_DEC(52,1),  FIXED_DEC(50,1)},
-		{Char_Senpai_New, FIXED_DEC(-60,1),  FIXED_DEC(50,1)},
+		{Char_SenpaiM_New, FIXED_DEC(-60,1),  FIXED_DEC(50,1)},
 		{Char_GFWeeb_New,   FIXED_DEC(0,1),  FIXED_DEC(45,1)},
 		
 		//Stage background
@@ -375,28 +375,28 @@
 	
 	{ //StageId_Kapi_1 (Wocky)
 		//Characters
-		{Char_BF_New,   FIXED_DEC(105,1),  FIXED_DEC(100,1)},
-		{Char_Dad_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,     FIXED_DEC(0,1),    FIXED_DEC(0,1)},
+		{Char_BFWeeb_New,  FIXED_DEC(52,1),  FIXED_DEC(50,1)},
+		{Char_SenpaiM_New, FIXED_DEC(-60,1),  FIXED_DEC(50,1)},
+		{Char_GFWeeb_New,   FIXED_DEC(0,1),  FIXED_DEC(45,1)},
 		
 		//Stage background
-		Back_Dummy_New,
+		Back_Week6_New,
 		
 		//Song info
 		{FIXED_DEC(22,10),FIXED_DEC(22,10),FIXED_DEC(22,10)},
 		0x80, 1,
 		XA_Wocky, 0,
 		
-		StageId_Kapi_2, STAGE_LOAD_FLAG
+		StageId_Kapi_2, STAGE_LOAD_FLAG | STAGE_LOAD_OPPONENT
 	},
 	{ //StageId_Kapi_2 (Beathoven)
 		//Characters
-		{Char_BF_New,   FIXED_DEC(105,1),  FIXED_DEC(100,1)},
-		{Char_Dad_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,     FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
+		{Char_BFWeeb_New,  FIXED_DEC(52,1),  FIXED_DEC(50,1)},
+		{Char_Spirit_New, FIXED_DEC(-60,1),  FIXED_DEC(50,1)},
+		{Char_GFWeeb_New,   FIXED_DEC(0,1),  FIXED_DEC(45,1)},
 		
 		//Stage background
-		Back_Dummy_New,
+		Back_Week6_New,
 		
 		//Song info
 		{FIXED_DEC(21,10),FIXED_DEC(21,10),FIXED_DEC(21,10)},
@@ -407,28 +407,28 @@
 	},
 	{ //StageId_Kapi_3 (Hairball)
 		//Characters
-		{Char_BF_New,   FIXED_DEC(105,1),  FIXED_DEC(100,1)},
-		{Char_Dad_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,     FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
+		{Char_BFWeeb_New,  FIXED_DEC(52,1),  FIXED_DEC(50,1)},
+		{Char_Spirit_New, FIXED_DEC(-60,1),  FIXED_DEC(50,1)},
+		{Char_GFWeeb_New,   FIXED_DEC(0,1),  FIXED_DEC(45,1)},
 		
 		//Stage background
-		Back_Dummy_New,
+		Back_Week6_New,
 		
 		//Song info
 		{FIXED_DEC(19,10),FIXED_DEC(19,10),FIXED_DEC(19,10)},
 		0x80, 3,
 		XA_Hairball, 0,
 		
-		StageId_Kapi_4, STAGE_LOAD_FLAG
+		StageId_Kapi_4, STAGE_LOAD_FLAG | STAGE_LOAD_OPPONENT
 	},
 	{ //StageId_Kapi_4 (Nyaw)
 		//Characters
-		{Char_BF_New,   FIXED_DEC(105,1),  FIXED_DEC(100,1)},
-		{Char_Dad_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,     FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
+		{Char_BFWeeb_New,  FIXED_DEC(52,1),  FIXED_DEC(50,1)},
+		{Char_Jevil_New, FIXED_DEC(-60,1),  FIXED_DEC(50,1)},
+		{Char_GFWeeb_New,   FIXED_DEC(0,1),  FIXED_DEC(45,1)},
 		
 		//Stage background
-		Back_Dummy_New,
+		Back_Week6_New,
 		
 		//Song info
 		{FIXED_DEC(25,10),FIXED_DEC(25,10),FIXED_DEC(25,10)},
@@ -440,12 +440,12 @@
 	
 	{ //StageId_Clwn_1 (Improbable Outset)
 		//Characters
-		{Char_BF_New,    FIXED_DEC(105,1),  FIXED_DEC(100,1)},
-		{Char_Tank_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,      FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
+		{Char_BF_New,      FIXED_DEC(56,1),   FIXED_DEC(85,1)},
+		{Char_Spook_New,  FIXED_DEC(-90,1),   FIXED_DEC(85,1)},
+		{Char_GF_New,       FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
 		
 		//Stage background
-		Back_Dummy_New,
+		Back_Week2_New,
 		
 		//Song info
 		{FIXED_DEC(2,1),FIXED_DEC(25,10),FIXED_DEC(3,1)},
@@ -456,28 +456,28 @@
 	},
 	{ //StageId_Clwn_2 (Madness)
 		//Characters
-		{Char_BF_New,    FIXED_DEC(105,1),  FIXED_DEC(100,1)},
-		{Char_Tank_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,      FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
+		{Char_BF_New,      FIXED_DEC(56,1),   FIXED_DEC(85,1)},
+		{Char_Spook_New,  FIXED_DEC(-90,1),   FIXED_DEC(85,1)},
+		{Char_GF_New,       FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
 		
 		//Stage background
-		Back_Dummy_New,
+		Back_Week2_New,
 		
 		//Song info
 		{FIXED_DEC(2,1),FIXED_DEC(25,10),FIXED_DEC(3,1)},
 		0x81, 2,
 		XA_Madness, 2,
 		
-		StageId_Clwn_3, 0
+		StageId_Clwn_3, STAGE_LOAD_FLAG
 	},
 	{ //StageId_Clwn_3 (Hellclown)
 		//Characters
-		{Char_BF_New,    FIXED_DEC(105,1),  FIXED_DEC(100,1)},
-		{Char_Tank_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,      FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
+		{Char_BF_New,      FIXED_DEC(56,1),   FIXED_DEC(85,1)},
+		{Char_Spook_New,  FIXED_DEC(-90,1),   FIXED_DEC(85,1)},
+		{Char_GF_New,       FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
 		
 		//Stage background
-		Back_Dummy_New,
+		Back_Week2_New,
 		
 		//Song info
 		{FIXED_DEC(2,1),FIXED_DEC(25,10),FIXED_DEC(3,1)},
@@ -488,12 +488,12 @@
 	},
 	{ //StageId_Clwn_4 (Expurgation)
 		//Characters
-		{Char_BF_New,    FIXED_DEC(105,1),  FIXED_DEC(100,1)},
-		{Char_Tank_New, FIXED_DEC(-120,1),  FIXED_DEC(100,1)},
-		{Char_GF_New,      FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
+		{Char_BF_New,      FIXED_DEC(56,1),   FIXED_DEC(85,1)},
+		{Char_Spook_New,  FIXED_DEC(-90,1),   FIXED_DEC(85,1)},
+		{Char_GF_New,       FIXED_DEC(0,1),  FIXED_DEC(-15,1)},
 		
 		//Stage background
-		Back_Dummy_New,
+		Back_Week2_New,
 		
 		//Song info
 		{FIXED_DEC(34,10),FIXED_DEC(34,10),FIXED_DEC(34,10)},

@@ -36,11 +36,11 @@ typedef struct
 
 //Week 3 background functions
 static const u8 win_cols[][3] = {
-	{ 49, 162, 253},
-	{ 49, 253, 140},
-	{251,  51, 245},
-	{253,  69,  49},
-	{251, 166,  51},
+	{91,  206, 250},
+	{245, 169, 184},
+	{255, 255, 255},
+	{245, 169, 184},
+	{91, 206, 250},
 };
 
 #define TRAIN_START_X FIXED_DEC(500,1)
